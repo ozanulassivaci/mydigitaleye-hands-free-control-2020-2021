@@ -124,6 +124,26 @@ The Camera tab shows the live feed with the face box (red), safe area (blue), no
   <em>Mode 1: typing on the on-screen keyboard with head movements and winks (March 2021 recording).</em>
 </p>
 
+## Demo videos
+
+Screen recordings of the working application from March 2021, including full-length recordings. The videos are stored with Git LFS: open a file and use **View raw** to download it, or clone with Git LFS installed.
+
+| Video | Length | Shows |
+| --- | --- | --- |
+| [mode1-head-control-demo.mp4](media/videos/mode1-head-control-demo.mp4) | 0:54 | Mode 1: typing on the on-screen keyboard with head movements and winks |
+| [mode2-eye-control-demo.mp4](media/videos/mode2-eye-control-demo.mp4) | 1:01 | Mode 2: typing "dijital gözüm" with eye movements only |
+| [pupil-tracking-test.mp4](media/videos/pupil-tracking-test.mp4) | 2:28 | Pupil detection test on the camera feed |
+| [pupil-tracking-short.mp4](media/videos/pupil-tracking-short.mp4) | 0:21 | Short pupil tracking clip |
+| [shortcuts/pause.mp4](media/videos/shortcuts/pause.mp4) | 0:10 | Pause shortcut |
+| [shortcuts/resume.mp4](media/videos/shortcuts/resume.mp4) | 0:11 | Resume shortcut |
+| [shortcuts/show-desktop.mp4](media/videos/shortcuts/show-desktop.mp4) | 0:06 | Show desktop shortcut |
+| [shortcuts/on-screen-keyboard.mp4](media/videos/shortcuts/on-screen-keyboard.mp4) | 0:07 | On-screen keyboard shortcut |
+| [shortcuts/file-explorer.mp4](media/videos/shortcuts/file-explorer.mp4) | 0:07 | File Explorer shortcut |
+| [full-sessions/shortcuts-session.mp4](media/videos/full-sessions/shortcuts-session.mp4) | 4:42 | All shortcuts in one recording |
+| [full-sessions/mode1-session.mp4](media/videos/full-sessions/mode1-session.mp4) | 5:00 | Full-length Mode 1 recording |
+| [full-sessions/mode2-session.mp4](media/videos/full-sessions/mode2-session.mp4) | 4:50 | Full-length Mode 2 recording |
+| [full-sessions/complete-session.mp4](media/videos/full-sessions/complete-session.mp4) | 12:07 | Complete 12-minute recording of both modes |
+
 ## Tech stack
 
 | Component | Used for |
@@ -142,7 +162,7 @@ The 2021 version ran on Python 3.6.12 with OpenCV 4.4.0.42, dlib 19.8.1, NumPy 1
 Tested on Windows 11 with Python 3.14. The shortcuts use Windows key combinations; see [Limitations](#limitations).
 
 ```powershell
-git clone https://github.com/ozanulassivaci/mydigitaleye-2020.git
+git clone https://github.com/ozanulassivaci/mydigitaleye-2020.git   # needs Git LFS for videos and slides
 cd mydigitaleye-2020
 py -m venv .venv
 .venv\Scripts\activate
@@ -196,9 +216,9 @@ mydigitaleye-2020/
 │       └── assets/              # interface images and voice prompts (tr, en)
 ├── tests/                       # unit tests (unittest)
 ├── scripts/download_model.py    # fetches the dlib landmark model
-├── docs/                        # TÜBİTAK and TEKNOFEST reports, presentation notes
+├── docs/                        # TÜBİTAK and TEKNOFEST reports, slides, technical notes
 ├── archive/                     # original code, Sept 2020 – March 2021
-├── media/                       # screenshots, diagrams, branding
+├── media/                       # screenshots, diagrams, branding, demo videos (Git LFS)
 └── requirements.txt
 ```
 
@@ -209,7 +229,8 @@ The project was submitted to the **TÜBİTAK 2204-A High School Research Project
 - [TÜBİTAK 2204-A project report](docs/reports/tubitak-2204a-project-report.pdf) and its [source code appendix](docs/reports/tubitak-2204a-appendix-source-code.pdf)
 - [TEKNOFEST preliminary design report](docs/reports/teknofest-preliminary-design-report.pdf)
 - [Detection algorithms, with figures](docs/technical/detection-algorithms.pdf)
-- [Presentation script](docs/presentations/presentation-script.pdf) and [talking points](docs/presentations/presentation-talking-points.pdf)
+- Slide decks for the [jury](docs/presentations/presentation-slides-jury.pdf) and a [student audience](docs/presentations/presentation-slides-student.pdf), the [presentation script](docs/presentations/presentation-script.pdf) and [talking points](docs/presentations/presentation-talking-points.pdf)
+- [Draft patent claims](docs/technical/patent-claims-draft.pdf)
 
 See [`docs/README.md`](docs/README.md) for a description of each file.
 
