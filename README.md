@@ -162,8 +162,8 @@ The 2021 version ran on Python 3.6.12 with OpenCV 4.4.0.42, dlib 19.8.1, NumPy 1
 Tested on Windows 11 with Python 3.14. The shortcuts use Windows key combinations; see [Limitations](#limitations).
 
 ```powershell
-git clone https://github.com/ozanulassivaci/mydigitaleye-2020.git   # needs Git LFS for videos and slides
-cd mydigitaleye-2020
+git clone https://github.com/ozanulassivaci/mydigitaleye-hands-free-control-2020-2021.git   # needs Git LFS for videos and slides
+cd mydigitaleye-hands-free-control-2020-2021
 py -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
@@ -204,7 +204,7 @@ python -m unittest
 ## Project structure
 
 ```text
-mydigitaleye-2020/
+mydigitaleye-hands-free-control-2020-2021/
 ├── src/
 │   ├── main.py                  # command-line entry point
 │   └── mydigitaleye/
